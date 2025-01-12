@@ -1,6 +1,7 @@
 Python
 tensorflow
 scikit-learn
+keras
 numpy
 pandas
 matplotlib
