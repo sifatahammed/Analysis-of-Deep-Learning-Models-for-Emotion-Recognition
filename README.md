@@ -33,12 +33,12 @@ Two padding techniques were employed to handle variable sequence lengths in the 
 
 ## Project Structure
 emotion-recognition/
-├── data/              # Contains the SEED-V dataset (or instructions on how to obtain it).
-├── models/            # Contains the model implementations (e.g., DNN.py, LSTM.py, CNN.py, CNN_LSTM.py).
+├── data/             # Contains the SEED-V dataset instructions on how to obtain it.
 ├── preprocessing/    # Contains scripts for data preprocessing, including padding.
+├── models/           # Contains the model implementations (e.g., DNN.py, LSTM.py, CNN.py, CNN_LSTM.py)
 ├── evaluation/       # Contains scripts for model evaluation and performance analysis.
-├── results/          # Contains the results of the experiments (e.g., performance metrics, plots, saved models).
-├── requirements.txt   # Lists the project dependencies.
+├── results/          # Contains the results of the experiments .
+├── requirements.txt  # Lists the project dependencies.
 └── README.md         # This file.
 
 
@@ -65,28 +65,43 @@ Use requirements.txt | PyCharm Documentation - JetBrains
 www.jetbrains.com
 
 
-Usage
-Data Preparation: Download or prepare the SEED-V dataset and place it in the data/ directory. Follow any specific instructions related to data formatting or preprocessing (include these in the README if necessary).
-Preprocessing: Run the preprocessing scripts in the preprocessing/ directory to apply the padding techniques. Example: python preprocessing/preprocess.py
-Model Training: Run the scripts in the models/ directory to train the different models. Example: python models/train_cnn_lstm.py
-Evaluation: Run the scripts in the evaluation/ directory to evaluate the model performance. Example: python evaluation/evaluate.py
-Results: The results of the experiments, including performance metrics (e.g., accuracy, precision, recall, F1-score), confusion matrices, and plots, will be saved in the results/ directory.
-Results
-Summarize your key findings here. Be specific!
+## Usage
+* Data Preparation: Download or prepare the SEED-V dataset and place it in the data/ directory. Follow any specific instructions related to data formatting or preprocessing (include these in the README if necessary).
+* Preprocessing: Run the preprocessing scripts in the preprocessing/ directory to apply the padding techniques. 
+* Model Training: Run the scripts in the models/ directory to train the different models. 
+* Evaluation: Run the scripts in the evaluation/ directory to evaluate the model performance. 
+* Results: The results of the experiments, including performance metrics (e.g., accuracy, precision, recall, F1-score), confusion matrices, and plots, will be saved in the results.
 
-For example:
 
-"The experiments showed that the CNN-LSTM model achieved the highest accuracy of 92% on the test set when using average padding. Zero padding resulted in a slightly lower accuracy of 89%. The LSTM model performed considerably worse, with an accuracy of 75%, indicating that capturing local features through convolutions is crucial for this task. The confusion matrices in the results/ folder show that the models had the most difficulty distinguishing between 'Fear' and 'Sad' emotions. Further details and visualizations are available in the results/ directory."
+## Results
 
-Include specific metrics and observations. This is crucial for demonstrating your work.
+The experiments successfully demonstrated that deep learning models can achieve high accuracy in emotion recognition tasks on the SEED dataset. We observed that accuracy varies across different deep learning models based on their architecture and input preprocessing techniques.
 
-Future Work
-Explore other deep learning architectures (e.g., Transformers).
-Investigate different data augmentation techniques to improve model robustness.
-Experiment with different hyperparameter optimization methods.
-Evaluate the models on other emotion recognition datasets to assess their generalizability.
-Contributing
+**Key Findings:**
+
+*   **Model Performance:** The CNN and Hybrid CNN-LSTM models significantly outperformed the DNN and LSTM models. Specifically:
+    *   **DNN:** Achieved an accuracy of 68%.
+    *   **LSTM:** Achieved an accuracy of 74%.
+    *   **CNN:** Achieved an accuracy of 81%.
+    *   **CNN-LSTM:** Achieved the highest accuracy of 83%.
+
+*   **Padding Impact:** Both the CNN and CNN-LSTM models achieved their highest accuracy when using *average padding*. This suggests that average padding is a more effective strategy for this dataset and these architectures compared to zero padding which performed better in LSTM with an accuracy of 74%.
+
+*   **Feature Importance:** The relatively lower performance of the LSTM model (74%) compared to the CNN and CNN-LSTM models highlights the importance of capturing local features through convolutions for this emotion recognition task. This indicates that spatial information within the input data is crucial for accurate emotion classification.
+
+*   **Confusion Analysis:** Analysis of the confusion matrices revealed that the models had the most difficulty distinguishing between 'Fear' and 'Sad' emotions. This suggests potential similarities in the features representing these emotions in the SEED dataset and could be an area for future investigation.
+
+*   **Detailed Results:** Further details, including specific metrics (e.g., precision, recall, F1-score) and visualizations (e.g., accuracy curves, confusion matrices), are available  within the respective model files.
+
+## Future Work
+
+* Explore other deep learning architectures (e.g., Transformers).
+* Investigate different data augmentation techniques to improve model robustness.
+* Experiment with different hyperparameter optimization methods.
+* Evaluate the models on other emotion recognition datasets with other modalities (e.g., combining facial expressions and speech) to assess their generalizability.
+* Explore the application of emotion recognition in real-world scenarios, such as human-computer interaction, education, or healthcare.
+Address challenges related to bias, fairness, and explainability in deep learning models for emotion recognition
+
+## Contributing
 Contributions to this project are welcome. Please open an issue or submit a pull request.
 
-License
-[Choose a license, e.g., MIT License. If you are unsure, the MIT license is a good default.]
