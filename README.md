@@ -1,5 +1,4 @@
-# Analysis-of-Deep-Learning-Models-for-Emotion-Recognition
-# Emotion Recognition using Deep Learning Models
+# Analysis of Deep Learning Models for Emotion Recognition
 
 This project explores the performance of various deep learning models for emotion recognition using the SEED-V dataset. The models implemented include Deep Neural Network (DNN), Long Short-Term Memory (LSTM), Convolutional Neural Network (CNN), and a hybrid CNN-LSTM model. The impact of different padding techniques (Zero Padding and Average Padding) on model performance is also evaluated.
 
@@ -13,7 +12,7 @@ The project utilizes the SEED-V dataset, which contains emotional data labeled w
 *   Sad
 *   Disgust
 
-More information about the SEED-V dataset can be found [here](ADD_DATASET_LINK_HERE). *It is crucial to add the correct link to the dataset documentation or download location here.* If the dataset isn't publicly available, explain how it was obtained (e.g., "obtained through research collaboration").
+More information about the SEED-V dataset can be found [here](https://bcmi.sjtu.edu.cn/home/seed/seed-v.html). *
 
 ## Models
 
@@ -46,32 +45,18 @@ emotion-recognition/
 
 The project requires the following Python libraries:
 
-numpy
-pandas
-scikit-learn
-tensorflow  # Or pytorch, specify which you used
-keras       # If using TensorFlow
-matplotlib
-seaborn
+*numpy
+*pandas
+*scikit-learn
+*tensorflow  
+*keras       
+*matplotlib
+*seaborn
 
 
 You can install the required libraries using pip:
 
-pip install -r requirements.txt
-Create a requirements.txt file in the root directory of your project. You can generate it using pip freeze > requirements.txt after installing your project's dependencies. 1    
- 1. 
-Use requirements.txt | PyCharm Documentation - JetBrains
-
-www.jetbrains.com
-
-
-## Usage
-* Data Preparation: Download or prepare the SEED-V dataset and place it in the data/ directory. Follow any specific instructions related to data formatting or preprocessing (include these in the README if necessary).
-* Preprocessing: Run the preprocessing scripts in the preprocessing/ directory to apply the padding techniques. 
-* Model Training: Run the scripts in the models/ directory to train the different models. 
-* Evaluation: Run the scripts in the evaluation/ directory to evaluate the model performance. 
-* Results: The results of the experiments, including performance metrics (e.g., accuracy, precision, recall, F1-score), confusion matrices, and plots, will be saved in the results.
-
+* pip install -r requirements.txt
 
 ## Results
 
