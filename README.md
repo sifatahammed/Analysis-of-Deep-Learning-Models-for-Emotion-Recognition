@@ -12,7 +12,7 @@ The project utilizes the SEED-V dataset, which contains emotional data labeled w
 *   Sad
 *   Disgust
 
-More information about the SEED-V dataset can be found [here](https://bcmi.sjtu.edu.cn/home/seed/seed-v.html). *
+More information about the SEED-V dataset can be found [here](https://bcmi.sjtu.edu.cn/home/seed/seed-v.html). 
 
 ## Models
 
