@@ -6,5 +6,4 @@ pandas
 matplotlib
 seaborn
 os
-opencv-python 
-tqdm 
+
