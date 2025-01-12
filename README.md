@@ -72,6 +72,9 @@ The experiments successfully demonstrated that deep learning models can achieve 
 
 *   **Detailed Results:** Further details, including specific metrics (e.g., precision, recall, F1-score) and visualizations (e.g., accuracy curves, confusion matrices), are available  within the respective model files.
 
+A overview of the Accuracy scores-
+![Accuracy](src/diagram_metrics.png)
+
 ## Future Work
 
 * Explore other deep learning architectures (e.g., Transformers).
