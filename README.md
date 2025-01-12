@@ -32,7 +32,7 @@ Two padding techniques were employed to handle variable sequence lengths in the 
 
 ## Experiment Architecture
 
-![Experiment Architecture] (src/diagram.jpeg)
+![Experiment Architecture](src/diagram.jpeg)
 
 
 ## Requirements
