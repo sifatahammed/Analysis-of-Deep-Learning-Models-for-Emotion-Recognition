@@ -30,15 +30,9 @@ Two padding techniques were employed to handle variable sequence lengths in the 
 *   **Zero Padding:** Padding sequences with zeros to achieve a uniform length. This can sometimes introduce bias if the padding is significant relative to the data.
 *   **Average Padding:** Padding sequences with the average value of the existing data. This aims to minimize the impact of padding on the data distribution compared to zero padding.
 
-## Project Structure
-emotion-recognition/
-├── data/             # Contains the SEED-V dataset instructions on how to obtain it.
-├── preprocessing/    # Contains scripts for data preprocessing, including padding.
-├── models/           # Contains the model implementations (e.g., DNN.py, LSTM.py, CNN.py, CNN_LSTM.py)
-├── evaluation/       # Contains scripts for model evaluation and performance analysis.
-├── results/          # Contains the results of the experiments .
-├── requirements.txt  # Lists the project dependencies.
-└── README.md         # This file.
+## Experiment Architecture
+
+![Experiment Architecture] (src/diagram.jpeg)
 
 
 ## Requirements
