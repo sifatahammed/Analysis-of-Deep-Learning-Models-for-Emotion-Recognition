@@ -12,7 +12,7 @@ The project utilizes the SEED-V dataset, which contains emotional data labeled w
 *   Sad
 *   Disgust
 
-More information about the SEED-V dataset can be found [here](https://bcmi.sjtu.edu.cn/home/seed/seed-v.html). 
+More information about the SEED-V dataset can be found [BCMI@SJTU](https://bcmi.sjtu.edu.cn/home/seed/seed-v.html). 
 
 ## Models
 
@@ -47,10 +47,9 @@ The project requires the following Python libraries:
 * matplotlib
 * seaborn
 
-
 You can install the required libraries using pip:
 
-* pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ## Results
 
@@ -73,6 +72,7 @@ The experiments successfully demonstrated that deep learning models can achieve 
 *   **Detailed Results:** Further details, including specific metrics (e.g., precision, recall, F1-score) and visualizations (e.g., accuracy curves, confusion matrices), are available  within the respective model files.
 
 A overview of the Accuracy scores-
+
 ![Accuracy](figures/diagram_metrics.png)
 
 ## Future Work
@@ -86,4 +86,9 @@ Address challenges related to bias, fairness, and explainability in deep learnin
 
 ## Contributing
 Contributions to this project are welcome. Please open an issue or submit a pull request.
+
+## License
+[MIT License]
+
+
 
