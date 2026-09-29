@@ -1,9 +1,12 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header" width="100%"/>
+
 <div align="center">
 
-# 🧠 Deep Learning for Emotion Recognition
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&center=true&vCenter=true&width=850&lines=Emotion+Recognition+using+SEED-V;DNN+%7C+LSTM+%7C+CNN+%7C+CNN-LSTM;Zero+Padding+vs+Average+Padding;Deep+Learning+%7C+EEG+Emotion+Analysis" alt="Typing SVG">
+# 🧠 Deep Learning for Emotion Recognition
 
+**A comparative study of deep learning architectures and padding strategies for emotion recognition using the SEED-V dataset.**
 <br>
 
 <img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
@@ -18,9 +21,7 @@
 <img src="https://img.shields.io/badge/Best%20Accuracy-83%25-22C55E?style=for-the-badge" alt="83 percent accuracy">
 <img src="https://img.shields.io/badge/License-MIT-FACC15?style=for-the-badge" alt="MIT License">
 
-<br><br>
 
-**A comparative study of deep learning architectures and padding strategies for emotion recognition using the SEED-V dataset.**
 
 </div>
 
@@ -109,6 +110,7 @@ More information about the dataset is available through the **BCMI@SJTU SEED pro
                        Evaluation
 ```
 # 🏗️ Experiment Architecture
+![Experiment Architecture](figures/diagram.jpeg)
 
 The experimental pipeline consists of three main stages:
 
@@ -786,6 +788,33 @@ Contributions are welcome! Please follow these steps to contribute:
 * 📊 Scikit-learn, Matplotlib, and Seaborn
 * The broader open-source deep learning and neuroinformatics communities
 
+## 👨‍💻 Author
+
+<p align="center">
+  <strong>MD Sifat Ahammed Akash</strong>
+</p>
+<p align="center">
+  Full-Stack Developer • React Developer • AI/ML Enthusiast
+</p>
+<p align="center">
+  <a href="mailto:sifatahammed821@gmail.com">
+    <img src="https://img.shields.io/badge/Email-sifatahammed821%40gmail.com-red?logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://github.com/sifatahammed">
+    <img src="https://img.shields.io/badge/GitHub-sifatahammed-black?logo=github" alt="GitHub" />
+  </a>
+</p>
+
+
+## 📄 License
+
 <div align="center">
-⭐ If you found this project useful, consider starring the repository!
-<br> <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer&animation=twinkling" alt="Animated Footer"> </div> ```
+
+MIT License © MD Sifat Ahammed Akash
+</div>
+<div align="center">
+⭐ If this project is useful for your research or coursework, consider giving the repository a star!
+
+Built with ❤️ using Python, TensorFlow, OpenCV, and Keras.
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/> </div>
