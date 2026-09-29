@@ -4,6 +4,7 @@
 
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&center=true&vCenter=true&width=850&lines=Emotion+Recognition+using+SEED-V;DNN+%7C+LSTM+%7C+CNN+%7C+CNN-LSTM;Zero+Padding+vs+Average+Padding;Deep+Learning+%7C+EEG+Emotion+Analysis" alt="Typing SVG">
+
 # 🧠 Deep Learning for Emotion Recognition
 
 **A comparative study of deep learning architectures and padding strategies for emotion recognition using the SEED-V dataset.**
