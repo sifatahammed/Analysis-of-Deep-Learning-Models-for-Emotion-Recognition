@@ -1,94 +1,266 @@
-# Analysis of Deep Learning Models for Emotion Recognition
+<div align="center">
 
-This project explores the performance of various deep learning models for emotion recognition using the SEED-V dataset. The models implemented include Deep Neural Network (DNN), Long Short-Term Memory (LSTM), Convolutional Neural Network (CNN), and a hybrid CNN-LSTM model. The impact of different padding techniques (Zero Padding and Average Padding) on model performance is also evaluated.
+# 🧠 Deep Learning for Emotion Recognition
 
-## Dataset
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&center=true&vCenter=true&width=850&lines=Emotion+Recognition+using+SEED-V;DNN+%7C+LSTM+%7C+CNN+%7C+CNN-LSTM;Zero+Padding+vs+Average+Padding;Deep+Learning+%7C+EEG+Emotion+Analysis" alt="Typing SVG">
 
-The project utilizes the SEED-V dataset, which contains emotional data labeled with the following emotions:
+<br>
 
-*   Happy
-*   Fear
-*   Neutral
-*   Sad
-*   Disgust
+<img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+<img src="https://img.shields.io/badge/Keras-Deep%20Learning-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras">
+<img src="https://img.shields.io/badge/scikit--learn-ML-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
 
-More information about the SEED-V dataset can be found at [BCMI@SJTU](https://bcmi.sjtu.edu.cn/home/seed/seed-v.html). 
+<br>
 
-## Models
+<img src="https://img.shields.io/badge/SEED--V-Dataset-6366F1?style=for-the-badge" alt="SEED-V">
+<img src="https://img.shields.io/badge/Task-Emotion%20Recognition-10B981?style=for-the-badge" alt="Emotion Recognition">
+<img src="https://img.shields.io/badge/Best%20Accuracy-83%25-22C55E?style=for-the-badge" alt="83 percent accuracy">
+<img src="https://img.shields.io/badge/License-MIT-FACC15?style=for-the-badge" alt="MIT License">
 
-The following deep learning models were implemented and evaluated:
+<br><br>
 
-*   **DNN (Deep Neural Network):** A fully connected neural network used as a baseline model.
-*   **LSTM (Long Short-Term Memory):** A recurrent neural network suitable for sequential data, capturing temporal dependencies in the emotional data.
-*   **CNN (Convolutional Neural Network):** A convolutional neural network designed to extract local features from the input data.
-*   **CNN-LSTM (Hybrid Model):** A combination of CNN and LSTM layers, leveraging the feature extraction capabilities of CNNs and the temporal modeling of LSTMs.
+**A comparative study of deep learning architectures and padding strategies for emotion recognition using the SEED-V dataset.**
 
-## Padding Techniques
+</div>
 
-Two padding techniques were employed to handle variable sequence lengths in the data:
+---
 
-*   **Zero Padding:** Padding sequences with zeros to achieve a uniform length. This can sometimes introduce bias if the padding is significant relative to the data.
-*   **Average Padding:** Padding sequences with the average value of the existing data. This aims to minimize the impact of padding on the data distribution compared to zero padding.
+## 📌 Overview
 
-## Experiment Architecture
+This project investigates the use of **deep learning techniques for emotion recognition** using the **SEED-V dataset**.
 
-![Experiment Architecture](figures/diagram.jpeg)
+The study compares four different neural-network architectures:
 
+- 🧠 **DNN — Deep Neural Network**
+- 🔄 **LSTM — Long Short-Term Memory**
+- 🧩 **CNN — Convolutional Neural Network**
+- 🔗 **CNN-LSTM — Hybrid CNN + LSTM**
 
-## Requirements
+In addition to model architecture, the project investigates the effect of different sequence-padding techniques:
 
-The project requires the following Python libraries:
+- ⬛ **Zero Padding**
+- 🟦 **Average Padding**
 
-* numpy
-* pandas
-* scikit-learn
-* tensorflow  
-* keras       
-* matplotlib
-* seaborn
+The reported experiments achieved accuracies ranging from **68% to 83%**, with the **CNN-LSTM model achieving the highest reported accuracy of 83%**.
 
-You can install the required libraries using pip:
+---
 
-    pip install -r requirements.txt
+# 🎯 Project Objectives
 
-## Results
+The main objectives of this research are:
 
-The experiments successfully demonstrated that deep learning models can achieve high accuracy in emotion recognition tasks on the SEED dataset. We observed that accuracy varies across different deep learning models based on their architecture and input preprocessing techniques.
+1. Compare different deep learning architectures for emotion recognition.
+2. Investigate the effect of padding techniques on model performance.
+3. Analyze the ability of CNNs to capture local features.
+4. Investigate LSTM-based temporal modeling.
+5. Evaluate a hybrid CNN-LSTM architecture.
+6. Analyze classification errors using confusion matrices.
+7. Identify promising directions for future emotion-recognition research.
 
-**Key Findings:**
+---
 
-*   **Model Performance:** The CNN and Hybrid CNN-LSTM models significantly outperformed the DNN and LSTM models. Specifically:
-    *   **DNN:** Achieved an accuracy of 68%.
-    *   **LSTM:** Achieved an accuracy of 74%.
-    *   **CNN:** Achieved an accuracy of 81%.
-    *   **CNN-LSTM:** Achieved the highest accuracy of 83%.
+# 😊 Emotion Classes
 
-*   **Padding Impact:** Both the CNN and CNN-LSTM models achieved their highest accuracy when using *average padding*. This suggests that average padding is a more effective strategy for this dataset and these architectures compared to zero padding which performed better in LSTM with an accuracy of 74%.
+The project uses five emotion categories from the SEED-V dataset:
 
-*   **Feature Importance:** The relatively lower performance of the LSTM model (74%) compared to the CNN and CNN-LSTM models highlights the importance of capturing local features through convolutions for this emotion recognition task. This indicates that spatial information within the input data is crucial for accurate emotion classification.
+| Emotion | Description |
+|:---:|---|
+| 😄 **Happy** | Positive emotional state |
+| 😨 **Fear** | Fear-related emotional state |
+| 😐 **Neutral** | Neutral emotional state |
+| 😢 **Sad** | Sadness-related emotional state |
+| 🤢 **Disgust** | Disgust-related emotional state |
 
-*   **Confusion Analysis:** Analysis of the confusion matrices revealed that the models had the most difficulty distinguishing between 'Fear' and 'Sad' emotions. This suggests potential similarities in the features representing these emotions in the SEED dataset and could be an area for future investigation.
+---
 
-*   **Detailed Results:** Further details, including specific metrics (e.g., precision, recall, F1-score) and visualizations (e.g., accuracy curves, confusion matrices), are available  within the respective model files.
+# 📚 Dataset
 
-A overview of the Accuracy scores-
+This project utilizes the **SEED-V dataset** for emotion-recognition experiments.
 
-![Accuracy](figures/diagram_metrics.png)
+SEED-V is an EEG-based emotion-recognition dataset developed by the Brain-Computer Interface & Machine Learning Laboratory at Shanghai Jiao Tong University.
 
-## Future Work
+More information about the dataset is available through the **BCMI@SJTU SEED project page**.
 
-* Explore other deep learning architectures (e.g., Transformers).
-* Investigate different data augmentation techniques to improve model robustness.
-* Experiment with different hyperparameter optimization methods.
-* Evaluate the models on other emotion recognition datasets with other modalities (e.g., combining facial expressions and speech) to assess their generalizability.
-* Explore the application of emotion recognition in real-world scenarios, such as human-computer interaction, education, or healthcare.
-Address challenges related to bias, fairness, and explainability in deep learning models for emotion recognition
+### Dataset Processing Pipeline
 
-## Contributing
-Contributions to this project are welcome. Please open an issue or submit a pull request.
+```text
+                 ┌─────────────────────┐
+                 │     SEED-V Dataset  │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+                 ┌─────────────────────┐
+                 │   Preprocessing     │
+                 │   & Segmentation    │
+                 └──────────┬──────────┘
+                            │
+                 ┌──────────┴──────────┐
+                 │                     │
+                 ▼                     ▼
+          Zero Padding          Average Padding
+                 │                     │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+                  Model Experiments
+                            │
+                            ▼
+                       Evaluation
+```
+# 🏗️ Experiment Architecture
 
-## License
-[MIT License]
+The experimental pipeline consists of three main stages:
 
+1. **1️⃣ Data Preparation**: The SEED-V data is processed and segmented before being supplied to the neural networks.
+2. **2️⃣ Model Experiments**: Multiple architectures are trained/evaluated with different padding configurations.
+3. **3️⃣ Evaluation**: The trained models are evaluated and their performance metrics are collected for comparison.
 
+---
+
+## 🧠 Deep Learning Models
+
+### 1. DNN — Deep Neural Network
+The Deep Neural Network acts as a baseline architecture.
+
+```text
+Input
+  │
+  ▼
+Dense Layer
+  │
+  ▼
+Activation
+  │
+  ▼
+Dense Layer
+  │
+  ▼
+Output
+```
+
+DNNs use fully connected layers to learn nonlinear relationships between input features and emotion classes.
+
+> **Reported Accuracy:** `68%`
+
+---
+
+### 2. LSTM — Long Short-Term Memory
+LSTM is a recurrent neural-network architecture designed to learn dependencies in sequential data.
+
+```text
+Input Sequence
+      │
+      ▼
+ ┌──────────┐
+ │   LSTM   │
+ └────┬─────┘
+      │
+      ▼
+Temporal Features
+      │
+      ▼
+Classifier
+      │
+      ▼
+Emotion
+```
+
+LSTM is particularly useful when the ordering of observations contains meaningful information.
+
+> **Reported Accuracy:** `74%`
+
+---
+
+### 3. CNN — Convolutional Neural Network
+CNNs are designed to learn local patterns through convolution operations.
+
+```text
+Input
+  │
+  ▼
+Convolution
+  │
+  ▼
+Activation
+  │
+  ▼
+Pooling
+  │
+  ▼
+Feature Extraction
+  │
+  ▼
+Classifier
+  │
+  ▼
+Emotion
+```
+
+The reported results indicate that CNN-based feature extraction performed strongly in this experiment.
+
+> **Reported Accuracy:** `81%`
+
+---
+
+### 4. CNN-LSTM — Hybrid Model
+The CNN-LSTM combines convolutional feature extraction with recurrent temporal modeling.
+
+```text
+              Input
+                │
+                ▼
+               CNN
+                │
+                ▼
+        Local Feature Extraction
+                │
+                ▼
+              LSTM
+                │
+                ▼
+        Temporal Representation
+                │
+                ▼
+            Classifier
+                │
+                ▼
+             Emotion
+```
+
+This architecture attempts to combine the feature-learning capability of CNNs with the sequential modeling capability of LSTMs.
+
+> **Reported Accuracy:** `83%`
+
+---
+
+## 📊 Summary of Model Performance
+
+| Model Architecture | Description | Reported Accuracy |
+| :--- | :--- | :---: |
+| **DNN** | Baseline fully-connected network | `68%` |
+| **LSTM** | Recurrent neural network for temporal data | `74%` |
+| **CNN** | Local pattern extraction through convolution | `81%` |
+| **CNN-LSTM** | Hybrid feature extraction & sequence modeling | **`83%`** |
+
+---
+
+## 🧩 Padding Techniques
+
+A major component of this project is the comparison of two padding strategies.
+
+### ⬛ Zero Padding
+Zero padding extends a sequence by inserting zeros until all sequences reach the required length.
+
+**Example:**
+* **Original:** `[0.42, 0.61, 0.73]`
+* **After Zero Padding:** `[0.42, 0.61, 0.73, 0, 0, 0]`
+
+#### Advantages
+- Simple and easy to implement
+- Computationally inexpensive
+- Commonly used for sequence normalization
+
+#### Potential Limitation
+If a large amount of padding is introduced, zero values may differ significantly from the original data distribution.
 
