@@ -111,7 +111,7 @@ More information about the dataset is available through the **BCMI@SJTU SEED pro
                        Evaluation
 ```
 # 🏗️ Experiment Architecture
-![Experiment Architecture](figures/diagram.jpeg)
+![Experiment Architecture](figures/diag.png)
 
 The experimental pipeline consists of three main stages:
 
@@ -163,10 +163,10 @@ Input Sequence
 Temporal Features
       │
       ▼
-Classifier
+  Classifier
       │
       ▼
-Emotion
+   Emotion
 ```
 
 LSTM is particularly useful when the ordering of observations contains meaningful information.
@@ -317,9 +317,7 @@ The **CNN-LSTM** configuration achieved the highest reported accuracy of **83%**
 
 ## 📈 Accuracy Visualization
 
-*(Place accuracy visualization image or chart here)*
-
----
+<img src="figures/diagram_metrics.png">
 
 ## 🔍 Analysis of Results
 
@@ -526,8 +524,8 @@ pip freeze > requirements.txt
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_NAME>
+git clone [<REPOSITORY_URL>](https://github.com/sifatahammed/Analysis-of-Deep-Learning-Models-for-Emotion-Recognition)
+cd <Analysis-of-Deep-Learning-Models-for-Emotion-Recognition>
 ```
 
 ### 2. Create a Virtual Environment
@@ -591,15 +589,6 @@ Evaluate
    ↓
 Save Results
 ```
-# Deep Learning Emotion Recognition
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
-
-A deep learning project focused on EEG-based emotion recognition using various neural network architectures.
-
----
 
 ## 📂 Repository Structure
 
@@ -816,6 +805,6 @@ MIT License © MD Sifat Ahammed Akash
 <div align="center">
 ⭐ If this project is useful for your research or coursework, consider giving the repository a star!
 
-Built with ❤️ using Python, TensorFlow, OpenCV, and Keras.
+Built with ❤️ using Python, TensorFlow, Scikit-learn, Matplotlib, and Keras.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/> </div>
